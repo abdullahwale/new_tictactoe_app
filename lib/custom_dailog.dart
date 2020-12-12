@@ -10,14 +10,14 @@ class CustomDialog extends StatelessWidget {
       [this.actionText = "Reset"]);
   @override
   Widget build(BuildContext context) {
-    return new AlertDialog(
-      title: new Text(title),
-      content: new Text(content),
+    return AlertDialog(
+      title: Text(title),
+      content: Text(content),
       actions: <Widget>[
-        new FlatButton(
+        FlatButton(
           onPressed: callback,
           color: Colors.white,
-          child: new Text(actionText),
+          child: Text(actionText),
         )
       ],
     );
