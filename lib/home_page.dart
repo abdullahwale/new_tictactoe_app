@@ -45,12 +45,12 @@ class _HomePageState extends State<HomePage> {
     setState(() {
       if (activePlayer == 1) {
         gb.text = "X";
-        gb.bg = Colors.red;
+        gb.bg = Colors.yellowAccent;
         activePlayer = 2;
         player1.add(gb.id);
       } else {
         gb.text = "0";
-        gb.bg = Colors.black;
+        gb.bg = Colors.deepPurple;
         activePlayer = 1;
         player2.add(gb.id);
       }
